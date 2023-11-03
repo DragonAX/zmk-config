@@ -1,0 +1,4 @@
+config SHIELD_FROGBOARD_LEFT
+    def_bool $(shields_list_contains,frogboard_left)
+config SHIELD_FROGBOARD_RIGHT
+    def_bool $(shields_list_contains,frogboard_right)

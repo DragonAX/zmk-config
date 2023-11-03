@@ -1,0 +1,12 @@
+file_format: "1"
+id: frogboard
+name: frogboard
+type: shield
+url: https://github.com/DragonAX/froggie/
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - frogboard_left
+  - frogboard_right

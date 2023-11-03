@@ -1,0 +1,24 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
+// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
+//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+            bindings = <
+    &kp F1     &kp F2   &kp F3    &kp F4     &kp F5    &kp F6                            &kp F7     &kp F8    &kp F9    &kp F10   &kp F11  &kp F12
+    &kp ESC    &kp SEMI &kp COMMA &kp PERIOD &kp P     &kp Y                             &kp F      &kp G     &kp C     &kp R     &kp L    &kp BSLH
+    &kp TAB    &kp A    &kp O     &kp E      &kp U     &kp I                             &kp D      &kp H     &kp T     &kp N     &kp S    &kp SQT
+    &kp LSHIFT &kp SQT  &kp Q     &kp J      &kp K     &kp X      &kp ESC   &kp ESC      &kp B      &kp M     &kp W     &kp V     &kp C    &kp DOT 
+                                             &kp DEL   &kp RET    &kp SPACE &kp ESC      &kp RET    &kp SPACE 
+            >;
+
+        };
+    };
+};
