@@ -1,7 +1,7 @@
 #include "frogboard.dtsi" // Notice that the main dtsi files are included in the overlay.
 
 &default_transform {
-    col-offset = <7>;
+    col-offset = <8>;
 };
 
 &kscan0 {
@@ -13,5 +13,6 @@
         , <&pro_micro 18 GPIO_ACTIVE_HIGH> // col12 in the schematic
         , <&pro_micro 19 GPIO_ACTIVE_HIGH> // col13 in the schematic
         , <&pro_micro 20 GPIO_ACTIVE_HIGH> // col14 in the schematic
+        , <&pro_micro 21 GPIO_ACTIVE_HIGH>
         ;
 };
