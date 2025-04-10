@@ -14,11 +14,11 @@
 //          |    ~    |    ;:   |    Q    |    J    |    K    |    X    |   ALT   |  | BOOTLDR |    B    |    M    |    W    |    V    |    Z    |    /    |
 //                                         |         |  SHIFT  |  SPACE  |  |  EFTER  |         |   BSPC  | 
             bindings = <
-    &kp C_AL_LOCK    &kp F1     &kp F2    &kp F3    &kp F4     &kp F5   &kp F6                           &kp F7    &kp F8   &kp F9    &kp F10     &kp F11   &kp F12        &kp PSCRN
-    &none    &kp ESC      &kp SQT   &kp COMMA &kp DOT    &kp P    &kp Y                            &kp F     &kp G     &kp C     &kp R     &kp L    &kp SLASH      &kp PAUSE_BREAK
-    &kp K_CALC    &kp TAB    &kp A     &kp O     &kp E      &kp U    &kp I                            &kp D     &kp H     &kp T     &kp N     &kp S    &kp MINUS        &kp C_AL_FILES
+    &kp C_AL_FILES   &kp F1     &kp F2    &kp F3    &kp F4     &kp F5   &kp F6                           &kp F7    &kp F8   &kp F9    &kp F10     &kp F11   &kp F12        &kp PSCRN
+    &kp K_CALC    &kp ESC      &kp SQT   &kp COMMA &kp DOT    &kp P    &kp Y                            &kp F     &kp G     &kp C     &kp R     &kp L    &kp SLASH      &kp PAUSE_BREAK
+    &none    &kp TAB    &kp A     &kp O     &kp E      &kp U    &kp I                            &kp D     &kp H     &kp T     &kp N     &kp S    &kp MINUS        &kp C_AL_FILES
              &mt LALT GRAVE  &kp SEMI  &kp Q   &kp J    &kp K    &kp X      &kp LCTRL   &kp RALT  &kp B     &kp M     &kp W     &kp V     &kp Z    &mt RCTRL BSLH 
-                                       &kp ESC        &kp ENTER &kp LSHIFT &mo 1       &mo 1     &kp SPC   &kp BSPC            &kp SLASH
+                                       &kp K_APP     &kp ENTER &kp LSHIFT &mo 1       &mo 1     &kp SPC   &kp BSPC            &kp DEL 
             >;
 
         };
@@ -30,11 +30,11 @@
 // |    ~    |    ;:   |    Q    |    J    |    K    |    X    |   ALT   |  | BOOTLDR |    B    |    M    |    W    |    V    |    Z    |    /    |
 //                                         |         |  SHIFT  |  SPACE  |  |  ENTER  |         |   BSPC  | 
             bindings = <
-     &none    &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR  &bootloader           &bootloader &trans     &trans    &trans    &trans   &bt BT_CLR  &none  
+     &bt BT_CLR_ALL    &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &bt BT_SEL 5         &trans &trans     &trans    &trans    &trans   &trans  &none  
      &none    &trans     &trans   &trans    &trans    &kp LBKT  &kp RBKT                        &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT  &none    &trans           &none
      &none    &trans     &kp N1   &kp N2    &kp N3     &kp N4    &kp N5                           &kp N6      &kp N7   &kp N8   &kp N9    &kp N0     &trans          &none
               &trans     &none    &none     &none     &kp PG_DN  &kp PG_UP  &kp LGUI  &kp RCTRL    &kp MINUS   &kp EQUAL    &kp HOME  &kp END     &none    &trans
-                                  &none                 &trans   &trans   &trans     &trans     &trans   &trans             &none 
+                                  &trans                 &trans   &trans   &trans     &trans     &trans   &trans             &trans 
             >;
 
         };
